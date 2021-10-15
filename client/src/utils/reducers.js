@@ -11,7 +11,15 @@ import {
   TOGGLE_CART,
 } from './actions';
 
-
+ const initialState = {
+   state:{
+    products: [],
+    cart: [],
+    cartOpen: false,
+    categories: [],
+    currentCategory: ''
+  }
+ };
 
 
 
@@ -101,3 +109,5 @@ export const reducer = (state, action) => {
 export function useProductReducer(initialState) {
   return useReducer(reducer, initialState);
 }
+
+export default reducer;
