@@ -11,16 +11,6 @@ import {
   TOGGLE_CART,
 } from './actions';
 
- const initialState = {
-   state:{
-    products: [],
-    cart: [],
-    cartOpen: false,
-    categories: [],
-    currentCategory: ''
-  }
- };
-
 
 
 // TODO: To get a better understand of how a reducer works - add comments to the various actions in the reducer

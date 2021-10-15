@@ -13,6 +13,7 @@ import './style.css';
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
+  
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
 

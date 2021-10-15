@@ -8,7 +8,7 @@ import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import { useDispatch, useSelector } from 'react-redux';
 
-function CategoryMenu() {
+export default function CategoryMenu() {
   
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
@@ -60,4 +60,3 @@ function CategoryMenu() {
   );
 }
 
-export default CategoryMenu;

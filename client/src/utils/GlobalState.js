@@ -14,11 +14,11 @@ let store = createStore(reducer,
      currentCategory: '',
 })
 
- const StoreProvider = (props) => {  
+ function StoreProvider (props) {  
   return <Provider store={store} {...props} />;
  };
 
-const useStoreContext = () => {
+function useStoreContext () {
   return useContext(StoreContext);
 };
 
